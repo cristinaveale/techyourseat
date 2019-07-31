@@ -1,0 +1,79 @@
+@import "variables";
+@import "mixins";
+
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: transparent;
+  height: $header-height * 2;
+  img {
+    max-width: 15rem;
+  }
+}
+.header-bg {
+  align-items: center;
+  background-image: url("../../assets/images/90s-bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 1rem 4rem;
+  width: 100%;
+  @include breakpoint(xs) {
+    height: $header-height * 4;
+  }
+  .header-content {
+    background-color: $black;
+    color: $accent;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    opacity: 0.93;
+    padding: 1rem 3rem;
+    text-align: center;
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+    }
+    h1 {
+      font-size: 6rem;
+      @include breakpoint(sm) {
+        font-size: 5rem;
+      }
+      @include breakpoint(xs) {
+        font-size: 3rem;
+      }
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-family: $base-font-family;
+      color: $secondary;
+      @include breakpoint(sm) {
+        font-size: 2rem;
+      }
+      @include breakpoint(xs) {
+        font-size: 1.3rem;
+      }
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-family: $base-font-family;
+      @include breakpoint(sm) {
+        font-size: 1.2rem;
+      }
+      @include breakpoint(xs) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+button.mat-menu-item {
+  text-transform: capitalize;
+}

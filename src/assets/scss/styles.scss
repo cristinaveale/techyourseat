@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+// ----------------------------------------------------------------
+// Setup
+// ----------------------------------------------------------------
+@import 'setup/mixins';
+@import 'setup/variables';
+
+// ----------------------------------------------------------------
+// Base
+// ----------------------------------------------------------------
+@import 'base/root';
+
+// ----------------------------------------------------------------
+// Layout
+// ----------------------------------------------------------------
+@import 'layout/containers';
+
+// ----------------------------------------------------------------
+// Components
+// ----------------------------------------------------------------
+
+// ----------------------------------------------------------------
+// Utilities
+// ----------------------------------------------------------------
+@import 'utilities/spacing';
+
+@include mat-core();
+
+// Component themes
+@mixin custom-components-theme($theme) {
+  //@include buttons-theme($theme);
+}
+
+// Default theme to be applied
+@include angular-material-theme($tys-theme);
+@include custom-components-theme($tys-theme);
+
+// Class to apply dark theme to any element
+.tys-dark-theme {
+  @include angular-material-theme($tys-dark-theme);
+  @include custom-components-theme($tys-dark-theme);
+}

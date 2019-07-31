@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+
+.about-description {
+  max-width: 100%;
+  margin: 0 auto;
+  @include breakpoint(xs) {
+    text-align: justify;
+  }
+}
+
+.about-left {
+  h1 {
+    color: $primary;
+  }
+  margin-right: $baseline * 5;
+  @include breakpoint(sm) {
+    margin: auto;
+  }
+  @include breakpoint(xs) {
+    margin: auto;
+  }
+}
+
+.about-image {
+  width: 100%;
+  margin: 0 auto;
+  .about-groups {
+    max-height: 400px;
+    @include breakpoint(xs) {
+      max-height: 300px;
+    }
+  }
+}

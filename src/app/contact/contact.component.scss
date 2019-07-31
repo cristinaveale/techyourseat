@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+
+#contact {
+  background-image: url("../../assets/images/90s-bg-2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  height: $baseline * 12;
+  h2 {
+    color: $white;
+  }
+  @include breakpoint(xs) {
+    padding: 64px 16px;
+    text-align: center;
+  }
+  img {
+    width: 80px;
+  }
+}

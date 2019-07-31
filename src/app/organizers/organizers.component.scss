@@ -1,0 +1,81 @@
+@import 'variables';
+@import 'mixins';
+
+#organizers {
+  h1 {
+    font-weight: $base-font-weight;
+  }
+}
+
+.organizer-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: stretch;
+  align-content: stretch;
+  margin: 0;
+}
+.container {
+  position: relative;
+}
+
+.container > img {
+  width: 200px;
+  height: 200px;
+  @include breakpoint(xs) {
+    width: 130px;
+    height: 130px;
+  }
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+a:nth-child(even) > .overlay {
+  background-color: $primary;
+}
+a:nth-child(odd) .overlay {
+  background-color: $accent;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  @include breakpoint(xs) {
+    font-size: 14px;
+  }
+}

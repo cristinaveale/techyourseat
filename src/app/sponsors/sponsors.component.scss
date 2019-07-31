@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixins";
+
+#sponsors {
+  text-align: center;
+  padding: 1rem;
+}
+
+img {
+  max-width: $baseline * 25;
+  padding-bottom: 1rem;
+  @include breakpoint(xs) {
+    max-width: $baseline * 16;
+  }
+}
+
+h2,
+.sponsor-right {
+  text-align: center;
+}

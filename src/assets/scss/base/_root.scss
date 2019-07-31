@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  font-size: $baseline * 5;
+}
+h2 {
+  font-size: $baseline * 3;
+}
+h1,
+h2 {
+  font-family: $header-font;
+  font-weight: $base-font-weight;
+}
+h2 {
+  text-align: center;
+  color: $primary;
+  padding-bottom: 1rem;
+}
+hr {
+  width: 50%;
+}
+
+.mat-button,
+.mat-flat-button,
+.mat-icon-button,
+.mat-stroked-button {
+  text-transform: capitalize;
+}
+.mat-raised-button:not([class*="mat-elevation-z"]) {
+  background-color: $accent;
+  text-transform: capitalize;
+  a {
+    color: $white;
+  }
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+}

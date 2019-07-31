@@ -1,0 +1,41 @@
+@import "~@angular/material/theming";
+
+// Material Palettes
+$tys-primary: mat-palette($mat-purple);
+$tys-accent: mat-palette($mat-cyan);
+$tys-warn: mat-palette($mat-red);
+
+// Material Themes
+$tys-theme: mat-light-theme($tys-primary, $tys-accent, $tys-warn);
+$tys-dark-theme: mat-dark-theme($tys-primary, $tys-accent, $tys-warn);
+
+$primary: #8a52ff;
+$secondary: #ffe761;
+$accent: #58ebf1;
+$black: #000;
+$white: #fff;
+
+// Typography
+$header-font: "Mr Dafoe", cursive;
+$base-font-family: "Montserrat", sans-serif;
+
+// Font Sizes
+$base-font-size: 16px;
+$small-font-size: 12px;
+
+// Font Weights
+$light-font-weight: 300;
+$base-font-weight: 400;
+$bold-font-weight: 500;
+
+// Line Heights
+$base-line-height: 1.25;
+$heading-line-height: $base-line-height;
+
+// Spacing
+$sub-baseline: 8px;
+$baseline: 16px;
+
+// Misc
+$header-height: 65px;
+$animation-duration: 250ms;
