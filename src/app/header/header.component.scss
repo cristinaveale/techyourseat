@@ -26,6 +26,11 @@ mat-toolbar {
   img {
     max-width: 70%;
   }
+  h1 {
+    font-family: $header-font;
+    font-weight: $base-font-weight;
+    color: $primary;
+  }
   .header-content {
     background-color: $white;
     display: flex;
@@ -38,7 +43,6 @@ mat-toolbar {
       margin: 0;
     }
     h1 {
-      color: $accent;
       font-size: 6rem;
       @include breakpoint(sm) {
         font-size: 5rem;
