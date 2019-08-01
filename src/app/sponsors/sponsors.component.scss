@@ -9,6 +9,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @include breakpoint(xs) {
+    padding: 2rem;
+  }
 }
 
 .sponsor-content {
