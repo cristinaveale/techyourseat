@@ -3,6 +3,16 @@
 
 #sponsors {
   text-align: center;
+  padding: 4rem;
+  background: url("../../assets/images/retro-bg-three.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sponsor-content {
+  background-color: $white;
   padding: 1rem;
 }
 
@@ -14,7 +24,8 @@ img {
   }
 }
 
-h2,
-.sponsor-right {
-  text-align: center;
+h1 {
+  font-family: $header-font;
+  font-weight: $base-font-weight;
+  color: $primary;
 }
