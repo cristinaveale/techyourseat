@@ -1,0 +1,55 @@
+<mat-toolbar id="header" fxLayout="row" fxLayoutAlign.lt-md="center center">
+  <a href="#header">
+    <img src="../../assets/images/tys-logo.png" alt="tech your seat logo" />
+  </a>
+
+  <span class="fill-remaining-space"></span>
+
+  <!-- Desktop view -->
+  <div fxHide fxShow.gt-xs>
+    <button mat-button [matMenuTriggerFor]="about">
+      About Us
+    </button>
+    <mat-menu #about="matMenu">
+      <button mat-menu-item routerLink="/about">History</button>
+      <button mat-menu-item routerLink="/organizations">Organizations</button>
+    </mat-menu>
+    <button mat-button routerLink="/events">
+      Upcoming Events
+    </button>
+    <button mat-button [matMenuTriggerFor]="involved">Get Involved</button>
+    <mat-menu #involved="matMenu">
+      <button mat-menu-item routerLink="/membership">Join Our Coalition</button>
+      <button mat-menu-item routerLink="/sponsors">become a sponsor</button>
+    </mat-menu>
+    <a mat-button mat-raised-button href="#" target="_blank">Register</a>
+  </div>
+
+  <!-- Mobile view -->
+  <div fxHide fxShow.xs>
+    <mat-menu id="nav-menu" #appMenu="matMenu">
+      <button mat-button [matMenuTriggerFor]="about">
+        About Us
+      </button>
+      <mat-menu #about="matMenu">
+        <button mat-menu-item routerLink="/about">History</button>
+        <button mat-menu-item routerLink="/organizations">Organizations</button>
+      </mat-menu>
+      <button mat-button routerLink="/events">
+        Upcoming Events
+      </button>
+      <button mat-button [matMenuTriggerFor]="involved">Get Involved</button>
+      <mat-menu #involved="matMenu">
+        <button mat-menu-item routerLink="/membership">
+          Join Our Coalition
+        </button>
+        <button mat-menu-item routerLink="/sponsors">become a sponsor</button>
+      </mat-menu>
+      <a mat-button mat-raised-button href="#" target="_blank">Register</a>
+    </mat-menu>
+
+    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
