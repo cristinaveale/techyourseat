@@ -10,8 +10,11 @@ html {
 }
 
 body {
+  @include breakpoint(gt-xs) {
+    font-size: $baseline;
+  }
+  font-size: $sub-baseline * 1.6;
   font-family: $base-font-family;
-  font-size: $base-font-size;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +22,11 @@ body {
   font-weight: 600;
 }
 h1 {
-  font-size: $baseline * 2.5;
+  font-size: $base-font-size * 1.5;
+  margin: 0 0 1rem 0;
+  @include breakpoint(gt-xs) {
+    font-size: $base-font-size * 2;
+  }
 }
 h2 {
   font-size: $baseline * 1.5;

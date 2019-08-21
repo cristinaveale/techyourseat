@@ -31,24 +31,29 @@
 
   <!-- Mobile view -->
   <div fxHide fxShow.xs fxShow.sm>
-    <mat-menu id="nav-menu" #appMenu="matMenu">
-      <a mat-button routerLink="/">
+    <mat-menu
+      id="nav-menu"
+      #appMenu="matMenu"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <a mat-menu-item routerLink="/" fxFlex>
         Home
       </a>
-      <a mat-button routerLink="/about">
+      <a mat-menu-item routerLink="/about" fxFlex>
         About Us
       </a>
-      <!-- <button mat-button routerLink="/events">
+      <!-- <button mat-menu-item routerLink="/events">
         Upcoming Events
       </button> -->
-      <a mat-button routerLink="/get-involved">
+      <a mat-menu-item routerLink="/get-involved" fxFlex>
         Get Involved
       </a>
       <a
-        mat-button
-        mat-raised-button
+        mat-menu-item
         href="https://www.eventbrite.com/e/2nd-annual-techyourseat-clt-event-tickets-68892869427"
         target="_blank"
+        fxFlex
       >
         Register
       </a>

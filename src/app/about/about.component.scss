@@ -3,19 +3,18 @@
 
 #about {
   h1 {
-    font-weight: $base-font-weight;
     text-align: center;
   }
-
   .about-us {
     @include breakpoint(gt-xs) {
       background-attachment: fixed;
       background-position: center;
+      text-align: justify;
     }
     background: url("../../assets/images/retro6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: justify;
+    text-align: left;
     &-underlay {
       background-color: $underlay;
     }
@@ -24,8 +23,12 @@
   .organizations {
     width: 100%;
     img {
-      width: 180px;
-      margin: $baseline * 2;
+      width: 100px;
+      margin: $sub-baseline;
+      @include breakpoint(gt-xs) {
+        width: 180px;
+        margin: $baseline * 2;
+      }
     }
   }
 }
