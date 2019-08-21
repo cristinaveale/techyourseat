@@ -57,7 +57,7 @@ export class AboutComponent {
     },
     {
       id: "9",
-      img: "../../assets/images/2019-org-logos/wtm.svg",
+      img: "../../assets/images/2019-org-logos/wt-logo.png",
       org: "Charlotte Women Techmakers",
       url: "https://www.womentechmakers.com/membership"
     }
