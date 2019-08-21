@@ -1,12 +1,7 @@
 <section id="about" fxLayout="column" fxLayoutAlign="center center">
-  <div
-    class="about-description"
-    fxLayout.lt-lg="column"
-    fxLayoutAlign="center center"
-  >
-    <div class="about-left" fxFlex="40">
+  <div class="about-us pa4">
+    <div class="about-us-underlay pa4">
       <h1>Our Movement</h1>
-
       <p>
         <strong>CHARLOTTE</strong> is now unequivocally considered to be a major
         tech hub not only in the South, but on the East Coast at large. A
@@ -31,15 +26,161 @@
       </p>
       <p>Come to the table and <strong>#techYourSeat</strong>.</p>
     </div>
+  </div>
 
-    <div class="about-right" fxFlex="40">
-      <div
-        class="about-image"
-        fxLayout="column"
-        fxLayoutAlign="space-between center"
-      >
-        <img class="about-groups" src="../../assets/images/groups.png" alt="" />
+  <div class="organizations pa4" fxLayout="column" fxLayoutAlign="center">
+    <h1>Participating Organizations</h1>
+    <div fxLayout="row wrap" fxLayoutAlign="center center">
+      <div *ngFor="let item of orgs">
+        <a class="container" href="{{ item.url }}" target="_blank">
+          <img src="{{ item.img }}" alt="Avatar" class="image" />
+        </a>
       </div>
     </div>
   </div>
 </section>
+<!-- <div>
+  <h2>Your Organizers</h2>
+
+  <div class="flex">
+    <a
+      class="container"
+      href="https://www.girldevelopit.com/chapters/charlotte"
+    >
+      <img
+        src="../../assets/images/cristina-veale.jpg"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Cristina Veale</p>
+          <p>Girl Develop It</p>
+        </div>
+      </div>
+    </a>
+    <a class="container" href="https://charlotte.chicktech.org/">
+      <img
+        src="../../assets/images/rachel-parsons.png"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Rachel Parsons</p>
+          <p>ChickTech</p>
+        </div>
+      </div>
+    </a>
+    <a class="container" href="https://www.womentechmakers.com/">
+      <img
+        src="../../assets/images/jocelyn-keung.png"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Jocelyn Keung</p>
+          <p>Women Techmakers</p>
+        </div>
+      </div>
+    </a>
+    <a
+      class="container"
+      href="https://www.girldevelopit.com/chapters/charlotte"
+    >
+      <img
+        src="../../assets/images/alyssa-lemon.png"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Alyssa Lemon</p>
+          <p>Girl Develop It</p>
+        </div>
+      </div>
+    </a>
+    <a class="container" href="https://www.captechconsulting.com/">
+      <img
+        src="../../assets/images/lesleacarey.png"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Leslea Carey</p>
+          <p>CapTech</p>
+        </div>
+      </div>
+    </a>
+    <a
+      class="container"
+      href="https://www.girldevelopit.com/chapters/charlotte"
+    >
+      <img
+        src="../../assets/images/louise-clark.jpg"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Louise Clark</p>
+          <p>Girl Develop It</p>
+        </div>
+      </div>
+    </a>
+    <a class="container" href="https://www.meetup.com/Women-in-UX-Charlotte/">
+      <img
+        src="../../assets/images/sam-shaibani.jpg"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Samantha Shaibani</p>
+          <p>Women in UX</p>
+        </div>
+      </div>
+    </a>
+    <a class="container" href="http://ladytechcharmers.com/">
+      <img
+        src="../../assets/images/caitlin-sellers.jpeg"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Caitlin Sellers</p>
+          <p>Lady Tech Charmers</p>
+        </div>
+      </div>
+    </a>
+    <a class="container" href="https://www.meetup.com/WomenInTech/">
+      <img
+        src="../../assets/images/carly-gardner.jpeg"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Carly Gardner</p>
+          <p>Carolina WIT</p>
+        </div>
+      </div>
+    </a>
+    <a class="container" href="http://www.wogrammer.org/">
+      <img
+        src="../../assets/images/ErinSummers.png"
+        alt="Avatar"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text">
+          <p>Erin Summers</p>
+          <p>Wogrammer</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div> -->

@@ -1,32 +1,47 @@
 @import "variables";
 @import "mixins";
 
-#sponsors {
+.involvement,
+.sponsor {
   text-align: center;
-  padding: 4rem;
-  background: url("../../assets/images/retro-bg-three.jpg");
+  h1 {
+    font-weight: $base-font-weight;
+    margin: 0 0 2rem 0;
+  }
+  .involvement-underlay,
+  .sponsor-underlay {
+    background-color: $underlay;
+  }
+}
+.involvement {
+  @include breakpoint(gt-xs) {
+    background-attachment: fixed;
+    background-position: center;
+  }
+  background: url("../../assets/images/retro4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  @include breakpoint(xs) {
-    padding: 2rem;
+}
+.sponsor {
+  @include breakpoint(gt-xs) {
+    background-attachment: fixed;
+    background-position: center;
+  }
+  background: url("../../assets/images/retro3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.past-sponsors {
+  width: 100%;
+  h1 {
+    margin: 0;
+  }
+  img {
+    width: 150px;
+    margin: $baseline * 2;
+    margin-top: 0;
   }
 }
-
-.sponsor-content {
-  background-color: $white;
-  padding: 1rem;
-}
-
-img {
-  max-width: $baseline * 25;
-  padding-bottom: 1rem;
-  @include breakpoint(xs) {
-    max-width: $baseline * 16;
-  }
-}
-
-h1 {
-  font-family: $header-font;
-  font-weight: $base-font-weight;
-  color: $primary;
+a {
+  color: $white;
 }

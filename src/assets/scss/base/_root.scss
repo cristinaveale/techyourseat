@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  line-height: 1.18;
 }
 
 *,
@@ -15,6 +16,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
 }
 h1 {
   font-size: $baseline * 2.5;
@@ -33,7 +35,7 @@ hr {
   text-transform: capitalize;
 }
 .mat-raised-button:not([class*="mat-elevation-z"]) {
-  background-color: $accent;
+  background-color: $primary;
   text-transform: capitalize;
   a {
     color: $white;
@@ -41,6 +43,5 @@ hr {
 }
 
 a {
-  color: $accent;
   text-decoration: none;
 }

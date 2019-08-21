@@ -12,7 +12,6 @@ import { FooterComponent } from "./footer/footer.component";
 import { OrganizersComponent } from "./organizers/organizers.component";
 import { HomeComponent } from "./home/home.component";
 import { EventsComponent } from "./events/events.component";
-import { MembershipComponent } from "./membership/membership.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 
@@ -28,7 +27,6 @@ import { AppRoutingModule } from "./app-routing.module";
     OrganizersComponent,
     HomeComponent,
     EventsComponent,
-    MembershipComponent,
     NotFoundComponent,
     NavbarComponent
   ],
