@@ -1,0 +1,53 @@
+<div id="home">
+  <div class="home pa4" fxLayout="column">
+    <div
+      class="home-underlay pa4"
+      fxLayout="column"
+      fxLayoutAlign="space-between center"
+    >
+      <p>Save the date!</p>
+      <span class="pa2">
+        <strong>Sept 26th, 2019 | 5:30 - 8:30pm</strong>
+      </span>
+      <a
+        class="pa2"
+        target="_blank"
+        href="https://www.google.com/maps/place/GoodRoad+CiderWorks/@35.184917,-80.881635,17z/data=!4m12!1m6!3m5!1s0x88569f23b508d0a7:0xb59575e3729602e9!2sGoodRoad+CiderWorks!8m2!3d35.184917!4d-80.879441!3m4!1s0x88569f23b508d0a7:0xb59575e3729602e9!8m2!3d35.184917!4d-80.879441?shorturl=1"
+      >
+        GoodRoad CiderWorks
+      </a>
+      <a
+        class="pa2"
+        href="https://www.eventbrite.com/e/2nd-annual-techyourseat-clt-event-tickets-68892869427"
+        mat-button
+        mat-raised-button
+        >Register Now</a
+      >
+    </div>
+  </div>
+  <div class="home-quote" fxLayout="column" fxLayoutAlign="center center">
+    <h1 class="pa5">
+      <i
+        >We are the Charlotte women in tech groups whose goal is to cultivate a
+        centralized movement of increased diversity in the Charlotte
+        community.</i
+      >
+    </h1>
+  </div>
+  <div class="home-imgs pa4" fxLayout="column" fxLayoutAlign="center center">
+    <h1>#techyourseat 2018</h1>
+    <div fxLayout="row wrap" fxLayoutAlign="center center">
+      <ng-container *ngFor="let image of data">
+        <img [src]="image.url" />
+      </ng-container>
+    </div>
+    <mat-paginator
+      [length]="data2.length"
+      [pageSize]="size"
+      [pageIndex]="page"
+      [pageSizeOptions]="[4, 8, 12]"
+      (page)="getData($event)"
+    >
+    </mat-paginator>
+  </div>
+</div>

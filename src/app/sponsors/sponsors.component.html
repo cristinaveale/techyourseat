@@ -1,13 +1,56 @@
-<section id="sponsors" fxLayout="column">
-  <div class="sponsor-content" fxFlex="50">
-    <h1>Sponsorship</h1>
-    <p>
-      If you'd like to become a sponsor for #techyourseat 2019, please email us
-      by clicking the email icon below.
-    </p>
+<section id="involvement" fxLayout="column" fxLayoutAlign="center center">
+  <div class="involvement pa4" fxLayout="column" fxLayoutAlign="center center">
+    <div class="involvement-underlay pa4">
+      <h1>Get Involved</h1>
+      <p>
+        If you're a new technology group focused around amplifing the voices of
+        women in Charlotte, we would love for you to join our coalition.
+        Advocates are a crucial part of this movement, which is why we also
+        welcome and support WIT and STEM advocates. Please fill out the form
+        below and #techyourseat!
+      </p>
+      <a
+        mat-button
+        mat-raised-button
+        href="https://docs.google.com/forms/d/e/1FAIpQLSew2rKPAscpUZjIQtrSjMY3c-q9pieswRCdFgPSgiPlCSPSjQ/viewform"
+        target="_blank"
+      >
+        Join Us
+      </a>
+    </div>
   </div>
-  <div class="sponsor-content" fxFlex="50">
-    <h1>2018 Sponsors:</h1>
-    <img src="../../assets/images/sponsors-image.png" alt="sponsors logos" />
+  <div class="sponsor pa4" fxLayout="column" fxLayoutAlign="center center">
+    <div class="sponsor-underlay pa4">
+      <h1>Become a Sponsor</h1>
+      <p>
+        We are always excited when individuals or companies share our vision and
+        want to help boost our efforts. Whether you’re interested in offering up
+        a venue, providing refreshments or supplying experts and speakers for
+        events, we would be happy to talk with you. Fill out this form to begin
+        the conversation!
+      </p>
+      <a
+        mat-button
+        mat-raised-button
+        href="https://docs.google.com/forms/d/e/1FAIpQLSesVHwyiNix2pEa8wZpq4KPFzpjXqfcc5SHxwwYudf_5_Vv7w/viewform"
+        target="_blank"
+      >
+        Become a Sponsor
+      </a>
+      <div class="past-sponsors" fxLayout="column">
+        <h1 class="pt4">Our Past Sponsors</h1>
+        <p>
+          Thank you to our sponsors last year who made #techyourseat a HUGE
+          success!
+        </p>
+        <div fxLayout="row wrap" fxLayoutAlign="center center">
+          <div *ngFor="let item of sponsors">
+            <a class="container" href="{{ item.url }}" target="_blank">
+              <img src="{{ item.img }}" alt="Avatar" class="image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

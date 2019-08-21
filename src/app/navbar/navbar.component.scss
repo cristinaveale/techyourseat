@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: transparent;
+  height: $header-height * 2;
+  img {
+    max-width: 15rem;
+  }
+}
+button.mat-menu-item {
+  text-transform: capitalize;
+}
+a.mat-raised-button {
+  color: white;
+  font-weight: 600;
+}

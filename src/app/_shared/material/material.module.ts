@@ -15,7 +15,8 @@ import {
   MatToolbarModule,
   MatSelectModule,
   MatMenuModule,
-  MatGridListModule
+  MatGridListModule,
+  MatPaginatorModule
 } from "@angular/material";
 
 const modules: Array<any> = [
@@ -34,7 +35,8 @@ const modules: Array<any> = [
   MatToolbarModule,
   MatSelectModule,
   MatMenuModule,
-  MatGridListModule
+  MatGridListModule,
+  MatPaginatorModule
 ];
 
 @NgModule({
