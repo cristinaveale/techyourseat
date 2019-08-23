@@ -59,12 +59,31 @@
     background-attachment: fixed;
     background-position: center;
   }
-  background: url("../../assets/images/retro7.jpg");
+  @include breakpoint(xs) {
+    img {
+      max-height: 100px;
+    }
+  }
+  background: url("../../assets/images/retro5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  .mat-paginator {
-    border-color: rgba(138, 82, 255, 0.9);
+  h1 {
+    color: $primary;
+    text-shadow: 2px -2px #ababab;
+    font-size: $baseline * 1.3;
+    @include breakpoint(gt-xs) {
+      font-size: $baseline * 3;
+    }
+  }
+  :host ::ng-deep.mat-paginator .mat-paginator-container {
+    justify-content: center;
+  }
+  :host ::ng-deep.mat-paginator .mat-paginator-outer-container {
+    background-color: #58ebf1 !important;
+  }
+  :host ::ng-deep.mat-paginator .mat-paginator-container {
+    background-color: #58ebf1 !important;
   }
 }
 
