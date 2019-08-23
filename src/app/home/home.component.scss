@@ -69,21 +69,13 @@
   background-size: cover;
   text-align: center;
   h1 {
-    color: $primary;
-    text-shadow: 2px -2px #ababab;
-    font-size: $baseline * 1.3;
+    color: $accent;
+    text-shadow: 1px -1px #fff;
+    font-size: $baseline * 1.5;
+    font-weight: 700;
     @include breakpoint(gt-xs) {
       font-size: $baseline * 3;
     }
-  }
-  :host ::ng-deep.mat-paginator .mat-paginator-container {
-    justify-content: center;
-  }
-  :host ::ng-deep.mat-paginator .mat-paginator-outer-container {
-    background-color: #58ebf1 !important;
-  }
-  :host ::ng-deep.mat-paginator .mat-paginator-container {
-    background-color: #58ebf1 !important;
   }
 }
 
@@ -92,4 +84,9 @@ img {
   max-width: 100%;
   margin-left: 8px;
   margin-bottom: 8px;
+}
+
+:host ::ng-deep.mat-paginator .mat-paginator-container {
+  justify-content: center;
+  background: $accent;
 }
