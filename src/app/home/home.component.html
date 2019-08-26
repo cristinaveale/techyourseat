@@ -34,6 +34,23 @@
       >
     </h1>
   </div>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <div class="sponsors pa4" fxLayout="column" fxLayoutAlign="center center">
+      <h1>Our Sponsors</h1>
+      <p>
+        #techyourseat would not be possible without donations from our generous
+        sponsors!
+      </p>
+      <p>Click on each logo for more information about the company.</p>
+    </div>
+    <div class="sponsors" fxLayout="row wrap" fxLayoutAlign="center center">
+      <div *ngFor="let item of sponsors">
+        <a class="container" href="{{ item.url }}" target="_blank">
+          <img src="{{ item.img }}" alt="Avatar" class="image" />
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="home-imgs pa4" fxLayout="column" fxLayoutAlign="center center">
     <h1>#techyourseat 2018</h1>
     <div fxLayout="row wrap" fxLayoutAlign="center center">

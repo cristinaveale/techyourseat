@@ -54,6 +54,27 @@
   }
 }
 
+.sponsors {
+  width: 100%;
+  h1 {
+    color: $primary;
+    text-shadow: 1px -1px #202020;
+    font-size: $baseline * 1.5;
+    font-weight: 700;
+    @include breakpoint(gt-xs) {
+      font-size: $baseline * 3;
+    }
+  }
+  img {
+    width: 100px;
+    margin: $sub-baseline;
+    @include breakpoint(gt-xs) {
+      width: 180px;
+      margin: $baseline * 2;
+    }
+  }
+}
+
 .home-imgs {
   @include breakpoint(gt-xs) {
     background-attachment: fixed;

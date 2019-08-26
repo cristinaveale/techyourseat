@@ -6,6 +6,34 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
+  sponsors = [
+    {
+      name: "Eliassen Group",
+      url: "https://www.eliassen.com/",
+      img: "../../assets/images/2019-sponsor-logos/eliassen-logo.png"
+    },
+    {
+      name: "MATRIX",
+      url: "https://www.matrixres.com/",
+      img: "../../assets/images/2019-sponsor-logos/matrix-logo.png"
+    },
+    {
+      name: "Microsoft",
+      url: "https://www.microsoft.com/en-us/",
+      img: "../../assets/images/2018-sponsor-logos/microsoft-logo.png"
+    },
+    {
+      name: "Slalom",
+      url: "https://www.slalom.com/locations/charlotte",
+      img: "../../assets/images/2019-sponsor-logos/slalom-logo.png"
+    },
+    {
+      name: "WISE",
+      url: "https://www.wiseworks.org/",
+      img: "../../assets/images/2019-sponsor-logos/wise-logo.png"
+    }
+  ];
+
   data = [];
   data2 = [
     {

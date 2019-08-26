@@ -28,8 +28,17 @@
     </div>
   </div>
 
-  <div class="organizations pa4" fxLayout="column" fxLayoutAlign="center">
+  <div
+    class="organizations pa4"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+  >
     <h1>Participating Organizations</h1>
+    <p>
+      Here are all of the organizations you will see at #techyourseat! Click on
+      each logo to find out more about their mission, become a member, and
+      attend an event!
+    </p>
     <div fxLayout="row wrap" fxLayoutAlign="center center">
       <div *ngFor="let item of orgs">
         <a class="container" href="{{ item.url }}" target="_blank">
