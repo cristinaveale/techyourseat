@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     },
     {
       name: "WISE",
-      url: "https://www.wiseworks.org/",
+      url: "https://cltatc.org/wise/",
       img: "../../assets/images/2019-sponsor-logos/wise-logo.png"
     }
   ];
