@@ -33,6 +33,11 @@ export class HomeComponent implements OnInit {
       img: "../../assets/images/2019-sponsor-logos/slalom-logo.png"
     },
     {
+      name: "Slalom_Build",
+      url: "https://www.slalombuild.com/",
+      img: "../../assets/images/2019-sponsor-logos/slalombuildlogo.jpeg"
+    },
+    {
       name: "WISE",
       url: "https://cltatc.org/wise/",
       img: "../../assets/images/2019-sponsor-logos/wise-logo.png"
