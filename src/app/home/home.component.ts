@@ -13,6 +13,11 @@ export class HomeComponent implements OnInit {
       img: "../../assets/images/2019-sponsor-logos/eliassen-logo.png"
     },
     {
+      name: "Google Developer Groups",
+      url: "https://developers.google.com/community/gdg/",
+      img: "../../assets/images/2019-sponsor-logos/gdg-logo.png"
+    },
+    {
       name: "MATRIX",
       url: "https://www.matrixres.com/",
       img: "../../assets/images/2019-sponsor-logos/matrix-logo.png"
@@ -31,6 +36,11 @@ export class HomeComponent implements OnInit {
       name: "WISE",
       url: "https://cltatc.org/wise/",
       img: "../../assets/images/2019-sponsor-logos/wise-logo.png"
+    },
+    {
+      name: "Women Techmakers",
+      url: "https://www.womentechmakers.com/",
+      img: "../../assets/images/2019-sponsor-logos/wt-logo.png"
     }
   ];
 

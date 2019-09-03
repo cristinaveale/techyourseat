@@ -54,12 +54,6 @@ export class AboutComponent {
       img: "../../assets/images/2019-org-logos/wogrammer.png",
       org: "Wogrammer",
       url: "https://www.wogrammer.org"
-    },
-    {
-      id: "9",
-      img: "../../assets/images/2019-org-logos/wt-logo.png",
-      org: "Charlotte Women Techmakers",
-      url: "https://www.womentechmakers.com/membership"
     }
   ];
 }
