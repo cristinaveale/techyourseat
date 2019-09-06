@@ -10,6 +10,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  p {
+    font-size: $base-font-size * 2;
+    margin: 0 0 1rem 0;
+  }
   &-underlay {
     background-color: $underlay;
     @include breakpoint(gt-xs) {
@@ -21,10 +25,6 @@
         font-size: $base-font-size * 1.2;
       }
     }
-  }
-  p {
-    font-size: $base-font-size * 2;
-    margin: 0 0 1rem 0;
   }
   .location {
     color: $primary;
