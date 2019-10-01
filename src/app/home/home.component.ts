@@ -28,6 +28,11 @@ export class HomeComponent implements OnInit {
       img: "../../assets/images/2018-sponsor-logos/microsoft-logo.png"
     },
     {
+      name: "Red Ventures",
+      url: "https://www.redventures.com/",
+      img: "../../assets/images/2019-sponsor-logos/rv-logo.png"
+    },
+    {
       name: "Slalom",
       url: "https://www.slalom.com/locations/charlotte",
       img: "../../assets/images/2019-sponsor-logos/slalom-logo.png"
@@ -36,6 +41,11 @@ export class HomeComponent implements OnInit {
       name: "Slalom_Build",
       url: "https://www.slalombuild.com/",
       img: "../../assets/images/2019-sponsor-logos/slalombuildlogo.jpeg"
+    },
+    {
+      name: "Skookum Digital Works",
+      url: "https://www.skookum.com/",
+      img: "../../assets/images/2019-sponsor-logos/skookum-logo.png"
     },
     {
       name: "WISE",
